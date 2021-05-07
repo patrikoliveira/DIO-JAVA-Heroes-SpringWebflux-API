@@ -35,8 +35,6 @@ public class DynamoConfig {
 
     @Bean
     public AWSCredentials amazonAWSCredentials() {
-        return new BasicAWSCredentials(amazonAWSAccessKey, amazonAWSAccessKey);
+        return new BasicAWSCredentials(amazonAWSAccessKey, amazonAWSSecretKey);
     }
-
-
 }
